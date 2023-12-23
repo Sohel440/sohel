@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class ="container">
+    <div id="calculator">
+        <input type="text" id="display">
+      <div class="btn-container">
+        <button calss ="btn" style="background-color: orangered; color:white; font-weight:bolder;" onclick="
+        currvalue = ' ';
+        document.querySelector('#display').value = currvalue;
+        ">C</button>
+        <button calss ="btn" onclick="
+        currvalue = currvalue +'1';
+        document.querySelector('#display').value = currvalue;
+
+        ">1</button>
+        <button calss ="btn" 
+        onclick="
+        currvalue = currvalue +'2';
+        document.querySelector('#display').value = currvalue;
+        ">2</button>
+       
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'+';
+        document.querySelector('#display').value = currvalue;
+        " >+</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'3';
+        document.querySelector('#display').value = currvalue;
+        ">3</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'4';
+        document.querySelector('#display').value = currvalue;
+        ">4</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'-';
+        document.querySelector('#display').value = currvalue;
+        ">-</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'5';
+        document.querySelector('#display').value = currvalue;
+        ">5</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'6';
+        document.querySelector('#display').value = currvalue;
+        ">6</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'*';
+        document.querySelector('#display').value = currvalue;
+        ">*</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'7';
+        document.querySelector('#display').value = currvalue;
+        ">7</button>
+        <button calss ="btn"onclick="
+        currvalue = currvalue +'8';
+        document.querySelector('#display').value = currvalue;
+        ">8</button>
+        <button calss ="btn"onclick="
+        currvalue = currvalue +'/';
+        document.querySelector('#display').value = currvalue;
+        ">/</button>
+        <button calss ="btn"
+        onclick="
+        let res = eval(currvalue);
+        currvalue = res;
+        document.querySelector('#display').value = currvalue;
+        ">=</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'9';
+        document.querySelector('#display').value = currvalue;
+        ">9</button>
+        <button calss ="btn"
+        onclick="
+        currvalue = currvalue +'0';
+        document.querySelector('#display').value = currvalue;
+        ">0</button>
+        <button calss ="btn" onclick="
+        currvalue = currvalue +'5';
+        document.querySelector('#display').value = currvalue;
+        ">5</button>
+        <button calss ="btn" onclick="
+        currvalue = currvalue +'.';
+        document.querySelector('#display').value = currvalue;
+        ">.</button>
+      </div>
+    </div>
+</div>
+
+    <script>
+        let currvalue = ' ';
+        document.querySelector('#display').value = currvalue;
+
+    </script>
+</body>
+</html>
